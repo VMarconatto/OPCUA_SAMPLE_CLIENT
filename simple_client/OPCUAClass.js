@@ -13,7 +13,7 @@ const client = opcua.OPCUAClient.create(
     })
 
 
-class RigelOpcuaClient {
+class OpcuaClient {
     constructor(data = []) {
         this.data = data
         client.on('backoff', async (retry, delay) => {
@@ -129,7 +129,7 @@ class RigelOpcuaClient {
     }
 }
 
-const PLC_Utilidades = new RigelOpcuaClient()
+const PLC_Utilidades = new OpcuaClient()
 PLC_Utilidades.Device()
 
 
