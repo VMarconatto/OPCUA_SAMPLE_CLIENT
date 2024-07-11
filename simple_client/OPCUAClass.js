@@ -130,6 +130,7 @@ class OpcuaClient {
 }
 
 const PLC_Utilidades = new OpcuaClient()
+//
 PLC_Utilidades.Device()
 
 
